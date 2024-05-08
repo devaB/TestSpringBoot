@@ -1,7 +1,7 @@
 package com.springboot.controller;
 
-import com.springboot.entity.Countries;
-import com.springboot.service.CountriesService;
+import com.springboot.entity.State;
+import com.springboot.service.StateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +15,10 @@ import java.util.List;
 public class ApiController {
 
     @Autowired
-    CountriesService countriesService;
+    StateService stateService;
 
-    @RequestMapping(value = "/getAllCountries", method = RequestMethod.GET)
-    public ResponseEntity<List<Countries>> getAllCountries() {
-        return new ResponseEntity<List<Countries>>(countriesService.findAll(), HttpStatus.OK);
+    @RequestMapping(value = "/getAllStates", method = RequestMethod.GET)
+    public ResponseEntity<List<State>> getAllStates() {
+        return new ResponseEntity<List<State>>(stateService.findAll(), HttpStatus.OK);
     }
 }

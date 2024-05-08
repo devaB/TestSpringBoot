@@ -10,7 +10,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @AutoConfiguration
-@EnableSwagger2
+//@EnableSwagger2
 public class MyApplication implements WebMvcConfigurer {
     public static void main(String[] args) {
         try{
