@@ -10,7 +10,7 @@ import lombok.Data;
 public class Countries {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     private int id;
 

@@ -3,7 +3,12 @@ package com.springboot.repository;
 import com.springboot.entity.Countries;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.stereotype.Repository;
 
-@RepositoryRestResource(path = "countriesapi")
+import java.util.List;
+
+@Repository("countriesApi")
+@RepositoryRestResource
 public interface CountriesRepository extends JpaRepository<Countries, Integer> {
+    Countries findByName(String countryName);
 }
