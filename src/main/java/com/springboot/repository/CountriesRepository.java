@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("countriesApi")
-@RepositoryRestResource
+@Repository
+@RepositoryRestResource(path="countriesApi")
 public interface CountriesRepository extends JpaRepository<Countries, Integer> {
     Countries findByName(String countryName);
 }
