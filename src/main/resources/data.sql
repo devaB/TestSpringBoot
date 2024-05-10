@@ -11,3 +11,4 @@ INSERT INTO state (id, country_id, name) VALUES (3, 2, 'Goa');
 INSERT INTO state (id, country_id, name) VALUES (4, 3, 'UP');
 INSERT INTO state (id, country_id, name) VALUES (5, 4, 'MP');
 
+--test
